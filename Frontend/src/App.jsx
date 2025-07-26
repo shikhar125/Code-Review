@@ -24,7 +24,7 @@ function App() {
     setError('');
     setCode('');
     try {
-      const response = await axios.post('http://localhost:3000/ai/get-review', { code });
+      const response = await axios.post('https://code-review-swzq.onrender.com, { code });
       setMessages((msgs) => [
         ...msgs,
         { type: 'assistant', content: response.data }
